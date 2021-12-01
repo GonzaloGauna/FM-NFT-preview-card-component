@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/card-practice-using-bem-and-flexbox-L76iF4PL9)
-- Live Site URL: [Add live site URL here](https://fm-nft-card-component.netlify.app/)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/card-practice-using-bem-and-flexbox-L76iF4PL9)
+- Live Site URL: [Live Site](https://fm-nft-card-component.netlify.app/)
 
 ## My process
 
