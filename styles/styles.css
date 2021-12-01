@@ -1,0 +1,110 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: 'Outfit', sans-serif;
+    margin: 0%;
+    padding: 0%;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+:root {
+    /* Primary Colors */
+    --softBlue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+
+    /* Neutral Colors */
+    --mainColorBg: hsl(217, 54%, 11%);    /*veryDarkBlue (main BG)*/
+    --cardColorBg: hsl(216, 50%, 16%);    /*veryDarkBlue (card BG)*/
+    --lineColor: hsl(215, 32%, 27%);       /*veryDarkBlue (line)*/
+    --White: hsl(0, 0%, 100%);
+}
+img, p, h1, div, figure {
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 100%;
+    background-color: var(--mainColorBg);
+}
+main {
+    max-width: 100vw;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+.card {
+    max-width: 29rem;
+    display: flex;
+    flex-flow: column wrap;
+    background-color: var(--cardColorBg);
+    padding: 2rem;
+    margin-top: 10rem;
+    border-radius: 10px;
+    margin-bottom: 10rem;
+}
+.card__picture--image {
+    max-width: 25rem;
+    border-radius: 5px;
+}
+.card__title {
+    text-align: left;
+    color: var(--White);
+    margin: 2rem 0 2rem 0;
+}
+.card__text {
+    color: var(--softBlue);
+    font-size: 1.5rem;
+    margin: 0 0 1.5rem 0;
+    line-height: 2.5rem;
+}
+.card__info {
+    display: flex;
+    justify-content: space-between;
+}
+.card__price, .card__time {
+    display: flex;
+    align-items: center;
+}
+.card__price-text, .card__time-text {
+    margin-left: .5rem;
+    font-size: 1.5rem;
+}
+.card__price-text {
+    text-transform: uppercase;
+    color: var(--cyan);
+}
+.card__time-text {
+    color: var(--softBlue);
+}
+.card__break-line {
+    width: 25rem;
+    margin: 2rem 0 2rem 0;
+    border: 0;
+    border-top: 2px solid var(--lineColor);
+}
+.card__author {
+    display: flex;
+    align-items: center;
+    margin-bottom: .5rem;
+}
+.card__author-avatar {
+    max-width: 2.5rem;
+    border: 1px solid var(--White);
+    border-radius: 50%;
+}
+.card__author-name {
+    font-size: 1.3rem;
+    margin-left: 1rem;
+    color: var(--softBlue);
+}
+.card__author-name span {
+    color: var(--White);
+}
+.attribution { 
+    font-size: 11px; text-align: center; 
+    
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
