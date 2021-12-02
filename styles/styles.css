@@ -12,6 +12,7 @@ html {
     /* Primary Colors */
     --softBlue: hsl(215, 51%, 70%);
     --cyan: hsl(178, 100%, 50%);
+    --cyan-hover: hsl(178, 100%, 20%);
 
     /* Neutral Colors */
     --mainColorBg: hsl(217, 54%, 11%);    /*veryDarkBlue (main BG)*/
@@ -43,10 +44,45 @@ main {
     border-radius: 10px;
     margin-bottom: 10rem;
 }
-.card__picture--image {
+.card__picture-box {
+    max-width: 25rem;
+    height: 25rem;
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    transition: all 0.3s ease;
+    opacity: 0;
+    background-color: var(--cyan);
+    border-radius: 5px;
+}
+.card__picture-box--equilibrium {
+    border-radius: 5px;
     max-width: 25rem;
     border-radius: 5px;
 }
+.card__picture-box--view {
+    position: absolute;
+    opacity: 0;
+}
+
+.card__picture-box:hover .overlay {
+    opacity: .5;
+}
+.card__picture-box:hover .card__picture-box--view {
+    opacity: 1;
+}
+/* ------------------------ */
 .card__title {
     text-align: left;
     color: var(--White);
